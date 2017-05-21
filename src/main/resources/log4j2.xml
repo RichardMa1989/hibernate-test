@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} %c{1}.%M(%F:%L) %m%xEx%n" />
+<!-- 			<PatternLayout pattern="%d{HH:mm:ss.SSS} %t %c{1}.%M(%F:%L) %m%xEx%n" /> -->
+			<!-- <PatternLayout pattern="%d{HH:mm:ss} (%F:%L) %m%xEx%n" /> -->
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="debug">
+			<appender-ref ref="Console"></appender-ref>
+		</Root>
+	</Loggers>
+</Configuration>
